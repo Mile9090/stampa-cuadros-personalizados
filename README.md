@@ -5,10 +5,8 @@
 # <p align="center">🖼️ Stampa</p>
 ## <p align="center">✨ Tu estilo, tu historia, tu Stampa ✨</p>
 
----
-
 ## <p align="center">🎨 Convierte tus Recuerdos en Arte</p>
-En **Stampa**, transformamos tus imágenes favoritas en cuadros únicos y personalizados. 
+En **Stampa**, transformamos tus imágenes favoritas en cuadros únicos y personalizados.  
 
 ✅ **Personalización sin límites**  
 Elige entre nuestro catálogo o sube tu propia foto para convertirla en un cuadro de alta calidad.  
@@ -29,8 +27,6 @@ Compra fácil y entrega segura, con garantía de satisfacción.
   <a href="#"><strong>🎨 Personaliza tu cuadro ahora 🎨</strong></a>
 </p>
 
----
-
 ## <p align="center">📌 ¿Cómo Funciona Stampa? - Paso a Paso</p>
 1️⃣ **Elige tu imagen o sube tu foto.**  
 2️⃣ **Nosotros la retocamos y optimizamos para impresión.**  
@@ -40,8 +36,6 @@ Compra fácil y entrega segura, con garantía de satisfacción.
 <p align="center">
   <a href="#"><strong>🖼️ Explorar Catálogo 🖼️</strong></a>
 </p>
-
----
 
 ## <p align="center">💎 ¿Por Qué Elegir Stampa?</p>
 🎯 **Arte que perdura, estilo que inspira.**  
@@ -55,8 +49,6 @@ Compra fácil y entrega segura, con garantía de satisfacción.
   <a href="#"><strong>✨ Descubre la magia de Stampa ✨</strong></a>
 </p>
 
----
-
 ## <p align="center">⭐ Testimonios de Nuestros Clientes</p>
 > _"Siempre quise tener un cuadro de mi banda favorita con un diseño único. En Stampa lo hicieron posible y la calidad es increíble." — Juan P._
 
@@ -64,11 +56,23 @@ Compra fácil y entrega segura, con garantía de satisfacción.
 
 📸 **Comparte tu experiencia con el hashtag #MiHistoriaConStampa**  
 
----
+## <p align="center">🚀 Preguntas Frecuentes (FAQ)</p>
+
+### 📌 **¿Cuáles son los tamaños disponibles?**  
+✔️ 30x40 cm  
+✔️ 50x70 cm  
+✔️ 70x100 cm  
+
+### 📌 **¿Qué tipo de imágenes puedo subir?**  
+Cualquier imagen en **alta resolución** en formato JPG o PNG.  
+
+### 📌 **¿Cómo se realiza el pago?**  
+Aceptamos **tarjeta de crédito, débito y transferencias bancarias.**  
+
+### 📌 **¿Cuánto tarda el envío?**  
+Los envíos tardan **5 a 7 días hábiles** en llegar a tu dirección.  
 
 📍 **¿Tienes más dudas?** Contáctanos en [soporte@stampa.com](mailto:soporte@stampa.com)
-
----
 
 ## <p align="center">📍 Contacto y Redes Sociales</p>
 
