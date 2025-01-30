@@ -1,93 +1,118 @@
 <p align="center">
-  <img src="logo_stampa.png" alt="Stampa" width="200">
+  <img src="logo_stampa.png" alt="Stampa" width="250">
 </p>
 
-# <p align="center">🖼️ Stampa</p>
-## <p align="center">✨ Tu estilo, tu historia, tu Stampa ✨</p>
+# <p align="center" style="color:#4A4A4A; font-size: 2.5em; font-weight: bold;">🖼️ Bienvenido a Stampa</p>
+## <p align="center" style="color:#4A4A4A; font-size: 2em; font-style: italic;">✨ Tu estilo, tu historia, tu Stampa ✨</p>
 
-## <p align="center">🎨 Convierte tus Recuerdos en Arte</p>
-En **Stampa**, transformamos tus imágenes favoritas en cuadros únicos y personalizados.  
-
-✅ **Personalización sin límites**  
-Elige entre nuestro catálogo o sube tu propia foto para convertirla en un cuadro de alta calidad.  
-
-✅ **Calidad Premium**  
-Impresión en alta definición con colores vibrantes y materiales resistentes.  
-
-✅ **Diseño Exclusivo**  
-Cada cuadro es una pieza única, creada para reflejar tu estilo y personalidad.  
-
-✅ **Sostenibilidad**  
-Usamos materiales ecológicos y tintas sin tóxicos, comprometidos con el medio ambiente.  
-
-✅ **Experiencia sin complicaciones**  
-Compra fácil y entrega segura, con garantía de satisfacción.  
+<p align="center" style="color:#333333; font-size: 1.2em;">
+  Convierte tus recuerdos en arte con cuadros personalizados de alta calidad.
+</p>
 
 <p align="center">
-  <a href="#"><strong>🎨 Personaliza tu cuadro ahora 🎨</strong></a>
+  <a href="#"><img src="boton_personalizar.png" alt="Personalizar mi cuadro" width="250"></a>
 </p>
 
-## <p align="center">📌 ¿Cómo Funciona Stampa? - Paso a Paso</p>
-1️⃣ **Elige tu imagen o sube tu foto.**  
-2️⃣ **Nosotros la retocamos y optimizamos para impresión.**  
-3️⃣ **Imprimimos en materiales premium con calidad HD.**  
-4️⃣ **Recíbelo en casa y decora tu espacio.**  
+---
+
+## <p align="center" style="color:#4A4A4A; font-size: 2em; font-weight: bold;">🎨 Convierte tus Recuerdos en Arte</p>
 
 <p align="center">
-  <a href="#"><strong>🖼️ Explorar Catálogo 🖼️</strong></a>
+  <img src="imagen_destacada_1.png" alt="Cuadros personalizados" width="600" style="border-radius: 10px;">
 </p>
 
-## <p align="center">💎 ¿Por Qué Elegir Stampa?</p>
-🎯 **Arte que perdura, estilo que inspira.**  
-🎯 **Personaliza tu mundo con cuadros únicos y sostenibles.**  
-
-📌 **Materiales Premium:** Impresión de alta calidad sobre retablo de madera.  
-📌 **Colores vibrantes:** Resistente a la humedad y con protección UV.  
-📌 **Envíos a nivel nacional:** Recibe tu cuadro en la puerta de tu casa.  
+<ul style="color:#4A4A4A; font-size: 1.1em; line-height: 1.8;">
+  <li><strong>✅ Personalización sin límites</strong> – Elige una imagen de nuestro catálogo o sube tu propia foto.</li>
+  <li><strong>✅ Calidad Premium</strong> – Impresión en alta definición con materiales resistentes.</li>
+  <li><strong>✅ Diseño Exclusivo</strong> – Cada cuadro refleja tu estilo y personalidad.</li>
+  <li><strong>✅ Sostenibilidad</strong> – Materiales ecológicos y tintas sin tóxicos.</li>
+  <li><strong>✅ Entrega Segura</strong> – Compra fácil y envío a todo el país con garantía de satisfacción.</li>
+</ul>
 
 <p align="center">
-  <a href="#"><strong>✨ Descubre la magia de Stampa ✨</strong></a>
+  <a href="#" style="background:#4A4A4A; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; font-size:1.2em;">
+    🎨 Personaliza tu cuadro ahora 🎨
+  </a>
 </p>
 
-## <p align="center">⭐ Testimonios de Nuestros Clientes</p>
+---
+
+## <p align="center" style="color:#4A4A4A; font-size: 2em; font-weight: bold;">📌 ¿Cómo Funciona?</p>
+
+<p align="center">
+  <img src="pasos_proceso.png" alt="Cómo funciona Stampa" width="700" style="border-radius: 10px;">
+</p>
+
+<div style="color:#4A4A4A; font-size: 1.2em; line-height: 1.8;">
+  1️⃣ <strong>Elige tu imagen o sube tu foto.</strong>  
+  2️⃣ <strong>Nosotros la retocamos y optimizamos para impresión.</strong>  
+  3️⃣ <strong>Imprimimos en materiales premium con calidad HD.</strong>  
+  4️⃣ <strong>Recíbelo en casa y decora tu espacio.</strong>  
+</div>
+
+<p align="center">
+  <a href="#" style="background:#4A4A4A; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; font-size:1.2em;">
+    🖼️ Explorar Catálogo 🖼️
+  </a>
+</p>
+
+---
+
+## <p align="center" style="color:#4A4A4A; font-size: 2em; font-weight: bold;">💎 ¿Por Qué Elegir Stampa?</p>
+
+<p align="center">
+  <img src="imagen_destacada_2.png" alt="Cuadros en retablo" width="600" style="border-radius: 10px;">
+</p>
+
+<ul style="color:#4A4A4A; font-size: 1.1em; line-height: 1.8;">
+  <li>🎯 <strong>Arte que perdura, estilo que inspira.</strong></li>
+  <li>🎯 <strong>Personaliza tu mundo con cuadros únicos y sostenibles.</strong></li>
+  <li>📌 <strong>Materiales Premium:</strong> Impresión de alta calidad sobre retablo de madera.</li>
+  <li>📌 <strong>Colores vibrantes:</strong> Resistente a la humedad y con protección UV.</li>
+  <li>📌 <strong>Envíos a nivel nacional:</strong> Recibe tu cuadro en la puerta de tu casa.</li>
+</ul>
+
+<p align="center">
+  <a href="#" style="background:#4A4A4A; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; font-size:1.2em;">
+    ✨ Descubre la magia de Stampa ✨
+  </a>
+</p>
+
+---
+
+## <p align="center" style="color:#4A4A4A; font-size: 2em; font-weight: bold;">⭐ Testimonios de Nuestros Clientes</p>
+
+<p align="center">
+  <img src="clientes_felices.png" alt="Testimonios de clientes" width="600" style="border-radius: 10px;">
+</p>
+
 > _"Siempre quise tener un cuadro de mi banda favorita con un diseño único. En Stampa lo hicieron posible y la calidad es increíble." — Juan P._
 
 > _"Pedí un cuadro con una foto familiar y el resultado fue espectacular. Un recuerdo para toda la vida. ¡Gracias Stampa!" — Andrea G._
 
 📸 **Comparte tu experiencia con el hashtag #MiHistoriaConStampa**  
 
-## <p align="center">🚀 Preguntas Frecuentes (FAQ)</p>
-
-### 📌 **¿Cuáles son los tamaños disponibles?**  
-✔️ 30x40 cm  
-✔️ 50x70 cm  
-✔️ 70x100 cm  
-
-### 📌 **¿Qué tipo de imágenes puedo subir?**  
-Cualquier imagen en **alta resolución** en formato JPG o PNG.  
-
-### 📌 **¿Cómo se realiza el pago?**  
-Aceptamos **tarjeta de crédito, débito y transferencias bancarias.**  
-
-### 📌 **¿Cuánto tarda el envío?**  
-Los envíos tardan **5 a 7 días hábiles** en llegar a tu dirección.  
+---
 
 📍 **¿Tienes más dudas?** Contáctanos en [soporte@stampa.com](mailto:soporte@stampa.com)
 
-## <p align="center">📍 Contacto y Redes Sociales</p>
+---
+
+## <p align="center" style="color:#4A4A4A; font-size: 2em; font-weight: bold;">📍 Contacto y Redes Sociales</p>
 
 📩 **Email:** soporte@stampa.com  
 📍 **Ubicación:** Envíos a nivel nacional  
 
 <p align="center">
-  <a href="#"><img src="icon_instagram.png" width="30"></a>  
-  <a href="#"><img src="icon_facebook.png" width="30"></a>  
-  <a href="#"><img src="icon_tiktok.png" width="30"></a>  
+  <a href="#"><img src="icon_instagram.png" width="40"></a>  
+  <a href="#"><img src="icon_facebook.png" width="40"></a>  
+  <a href="#"><img src="icon_tiktok.png" width="40"></a>  
 </p>
 
 <p align="center">
-  <strong>🖼️ Tu estilo, tu historia, tu Stampa. 🖼️</strong>
+  <strong style="color:#4A4A4A; font-size: 1.5em;">🖼️ Tu estilo, tu historia, tu Stampa. 🖼️</strong>
 </p>
+
 
 
 
