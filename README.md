@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-<p align="center" style="color:#4A4A4A; font-size: 2.5em; font-weight: bold; font-family: 'Poppins', sans-serif;"> Bienvenido a</p>
+<p align="center" style="color:#4A4A4A; font-size: 60px; font-weight: bold; font-family: 'Poppins', sans-serif;"> Bienvenido a</p>
 
 <p align="center">
   <img src="https://github.com/Mile9090/stampa-cuadros-personalizados/blob/bd386e302b75092a11302b63be0faf27a8b027b9/cabezote.jpg" alt="Stampa" width="200%">
