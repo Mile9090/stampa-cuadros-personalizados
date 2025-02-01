@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="logo_stampa.png" alt="Stampa" width="250">
+  <img src="[logo_stampa.png](https://github.com/Mile9090/stampa-cuadros-personalizados/blob/bd386e302b75092a11302b63be0faf27a8b027b9/cabezote.jpg)" alt="Stampa" width="250">
 </p>
 
-# <p align="center" style="color:#4A4A4A; font-size: 2.5em; font-weight: bold;">🖼️ Bienvenido a Stampa</p>
+# <p align="center" style="color:#4A4A4A; font-size: 2.5em; font-weight: bold;"> Bienvenido a Stampa</p>
 ## <p align="center" style="color:#4A4A4A; font-size: 2em; font-style: italic;">✨ Tu estilo, tu historia, tu Stampa ✨</p>
 
 <p align="center" style="color:#333333; font-size: 1.2em;">
