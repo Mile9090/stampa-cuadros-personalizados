@@ -54,20 +54,18 @@
             transform: translateX(-50%);
         }
         .category-icons div {
-    background-color: white;
-    border-radius: 50%;
-    width: 180px; /* 20% más grande */
-    height: 180px; /* 20% más grande */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    overflow: hidden;
-    margin-top: 80px; /* Baja los círculos 2 cm */
-    border: 5px solid white; /* Borde blanco agregado */
-    position: relative; /* Necesario para usar position absolute en el texto */
-}
+            background-color: white;
+            border-radius: 50%;
+            width: 180px; /* 20% más grande */
+            height: 180px; /* 20% más grande */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            overflow: hidden;
+            border: 5px solid white; /* Borde blanco agregado */
+        }
         .category-icons div:hover {
             transform: scale(1.1);
         }
@@ -78,22 +76,11 @@
         }
         .category-icons div p {
             margin-top: 10px;
-             font-size: 20px; /* Ajusta el tamaño si es necesario */
-             font-weight: bold;
-             text-align: center;
-             color: black; /* O el color que prefieras */
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
         }
 
-        /* Estilo para la letra Ñ fuera del círculo */
-   .category-icons div .letter-n {
-    position: absolute;
-    bottom: 30px; /* Ajusta la distancia desde el círculo */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 30px; /* Tamaño de la letra Ñ */
-    font-weight: bold;
-}
-        
         /* ¿Cómo funciona Stampa? */
         .how-it-works {
             display: flex;
@@ -305,11 +292,32 @@
 
 <!-- Categorías -->
 <div class="category-icons">
-<div class="category-icons">
     <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/mascota.jpg" alt="Mascotas"></div>
     <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/paisajes.jpg" alt="Paisajes"></div>
     <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/abstracto.jpg" alt="Abstracto"></div>
     <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/personalizado.jpg" alt="Personalizada"></div>
+</div>
+
+<!-- Textos debajo de los iconos -->
+<div class="category-texts" style="text-align: center;">
+    <p>Mascotas</p>
+    <p>Paisajes</p>
+    <p>Abstracto</p>
+    <p>Personalizado</p>
+</div>
+
+<!-- ¿Cómo funciona Stampa? -->
+<div class="how-it-works">
+    <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrofamily.png" alt="Imagen de familia">
+    <div>
+        <h2>¿Cómo funciona Stampa?</h2>
+        <ul>
+            <li>1. Elige tu imagen o sube tu foto.</li>
+            <li>2. Nosotros la retocamos y optimizamos para impresión.</li>
+            <li>3. Imprimimos en materiales premium con calidad HD.</li>
+            <li>4. Recíbelo en casa y decora tu espacio.</li>
+        </ul>
+    </div>
 </div>
 
 <div class="features">
