@@ -35,32 +35,35 @@
         .header-image {
             text-align: center;
             margin-top: 60px;
+            position: relative;
         }
         .header-image img {
             width: 100%;
             max-width: 1600px;
         }
 
-        /* Categorías */
+        /* Categorías con iconos */
         .category-icons {
             display: flex;
-            justify-content: space-around;
-            margin: 40px 0;
-            background-color: white;
-            padding: 20px 0;
+            justify-content: center;
+            gap: 30px;
+            margin-top: -50px; /* Ajustar para que se monten encima */
+            position: absolute;
+            top: 60%; /* Ajusta la posición de los círculos sobre la imagen */
+            left: 50%;
+            transform: translateX(-50%);
         }
         .category-icons div {
             background-color: white;
             border-radius: 50%;
-            width: 180px; /* 20% más grande */
-            height: 180px; /* 20% más grande */
+            width: 180px;
+            height: 180px;
             display: flex;
             justify-content: center;
             align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
             overflow: hidden;
-            text-align: center;
         }
         .category-icons div:hover {
             transform: scale(1.1);
@@ -87,7 +90,7 @@
             color: #333;
         }
         .how-it-works img {
-            width: 50%; /* Imagen reducida al 50% */
+            width: 50%;
             height: auto;
             margin-right: 30px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -295,7 +298,7 @@
 </div>
 
 <!-- Textos debajo de los iconos -->
-<div class="category-texts">
+<div class="category-texts" style="text-align: center;">
     <p>Mascotas</p>
     <p>Paisajes</p>
     <p>Abstracto</p>
@@ -315,6 +318,12 @@
         </ul>
     </div>
 </div>
+
+<!-- Resto del contenido (productos, testimonios, etc.) -->
+
+</body>
+</html>
+
 
 
 <div class="features">
