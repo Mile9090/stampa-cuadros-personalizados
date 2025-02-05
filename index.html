@@ -244,8 +244,8 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .category-icons {
-                flex-direction: column;
-                gap: 20px;
+                flex-direction: row; /* Mantiene los círculos en una línea horizontal */
+                gap: 15px; /* Reduce el espacio entre los círculos */
             }
             .products {
                 flex-direction: column;
@@ -276,7 +276,7 @@
     .category-icons div {
         width: 120px; /* Ajusta el tamaño de los círculos */
         height: 120px; /* Ajusta el tamaño de los círculos */
-        margin-top: 40px; /* Ajusta la posición de los círculos */
+        margin-top: 0; /* Elimina el margen superior para que estén alineados */
     }
     .category-texts p {
         font-size: 14px; /* Ajusta el tamaño del texto */
@@ -307,14 +307,6 @@
     <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/paisajes.jpg" alt="Paisajes"></div>
     <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/abstracto.jpg" alt="Abstracto"></div>
     <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/personalizado.jpg" alt="Personalizada"></div>
-</div>
-
-<!-- Textos debajo de los iconos -->
-<div class="category-texts" style="text-align: center;">
-    <p>Mascotas</p>
-    <p>Paisajes</p>
-    <p>Abstracto</p>
-    <p>Personalizado</p>
 </div>
 
 <!-- ¿Cómo funciona Stampa? -->
