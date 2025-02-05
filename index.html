@@ -1,289 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stampa - Cuadros Personalizados</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <style>
-    /* Estilos generales */
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: #f9f9f9;
-    }
-
-    /* Estilo para el menú de navegación */
-    nav {
-      background-color: #4A4A4A;
-      width: 100%;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      font-size: 1.2em;
-      color: white;
-      margin: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      padding: 10px 20px;
-    }
-
-    /* Encabezado con imagen */
-    #inicio {
-      text-align: center;
-      padding: 50px 0;
-      background-color: #f3f3f3;
-    }
-
-    #inicio img {
-      width: 90%;
-      border-radius: 10px;
-    }
-
-    /* Sección de categorías con imágenes circulares */
-    .category-container {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin: 40px 0;
-    }
-
-    .category-container .category {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .category-container .category:hover {
-      transform: scale(1.1);
-    }
-
-    .category-container .category img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Sección "¿Cómo funciona Stampa?" */
-    .steps-container {
-      display: flex;
-      justify-content: space-around;
-      margin: 50px 0;
-      padding: 20px;
-      background-color: #fff;
-    }
-
-    .step {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 1.2em;
-      background-color: #DBDBDB;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .step:hover {
-      transform: scale(1.1);
-    }
-
-    .step img {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 10px;
-    }
-
-    /* Sección de "Convierte tus recuerdos en arte" */
-    .art-section {
-      padding: 50px;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-
-    .art-section .art-text {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-
-    .art-section img {
-      border-radius: 10px;
-      width: 300px;
-      height: 300px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-    }
-
-    /* Sección de testimonio */
-    .testimonials {
-      background-color: #DBDBDB;
-      padding: 40px 0;
-      text-align: center;
-    }
-
-    .testimonials blockquote {
-      font-family: 'Lato', sans-serif;
-      font-style: italic;
-      color: #4A4A4A;
-      font-size: 1.2em;
-      margin: 20px 0;
-    }
-
-    /* Redes sociales */
-    .social-media {
-      text-align: center;
-      padding: 30px;
-      background-color: #EFEFEF;
-    }
-
-    .social-media a {
-      color: #4A4A4A;
-      font-size: 2em;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-
-    .social-media a:hover {
-      color: #F5A623;
-    }
-
-    /* Sección de contacto */
-    .contact {
-      text-align: center;
-      margin: 50px 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-
-    /* Estilos de botones */
-    .btn {
-      background-color: #4A4A4A;
-      color: white;
-      padding: 12px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2em;
-    }
-
-    .btn:hover {
-      background-color: #F5A623;
-    }
-
-    /* Estilos para pantallas pequeñas */
-    @media (max-width: 768px) {
-      .category-container {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .steps-container {
-        flex-direction: column;
-      }
-
-      .step {
-        margin-bottom: 20px;
-      }
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAMPA - Cuadros Personalizados</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="STAMPA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#productos">Nuestros Productos</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Menú de navegación -->
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#productos">Nuestros productos</a></li>
-      <li><a href="#nosotros">Sobre Nosotros</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+    <section id="home">
+        <h1>"Tu estilo, tu historia, tu Stampa."</h1>
+        <div class="categorias">
+            <div class="categoria">
+                <img src="mascotas.jpg" alt="Mascotas">
+                <p>Mascotas</p>
+            </div>
+            <div class="categoria">
+                <img src="paisajes.jpg" alt="Paisajes">
+                <p>Paisajes</p>
+            </div>
+            <div class="categoria">
+                <img src="abstracto.jpg" alt="Abstracto">
+                <p>Abstracto</p>
+            </div>
+            <div class="categoria">
+                <img src="personalizada.jpg" alt="Personalizada">
+                <p>Personalizada</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Sección Inicio -->
-  <section id="inicio">
-    <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cabezoteinicialpagina.png" alt="Stampa">
-  </section>
+    <section id="como-funciona">
+        <h2>¿Cómo funciona Stampa?</h2>
+        <ol>
+            <li>Elige tu imagen o sube tu foto.</li>
+            <li>Nosotros los retocamos y optimizamos para impresión.</li>
+            <li>Imprimimos en materiales premium con calidad HD.</li>
+            <li>Recíbelo en casa y decora tu espacio.</li>
+        </ol>
+    </section>
 
-  <!-- Sección de Categorías -->
-  <section class="category-container">
-    <div class="category">
-      <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/mascotas.jpg" alt="Mascotas">
-    </div>
-    <div class="category">
-      <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/paisajes.jpg" alt="Paisajes">
-    </div>
-    <div class="category">
-      <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/abstracto.jpg" alt="Abstracto">
-    </div>
-    <div class="category">
-      <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/personalizada.jpg" alt="Personalizada">
-    </div>
-  </section>
+    <section id="beneficios">
+        <h2>Beneficios de Stampa</h2>
+        <ul>
+            <li><strong>Personalización sin límites:</strong> Elige una imagen de nuestro catálogo o sube tu propia foto.</li>
+            <li><strong>Calidad Premium:</strong> Impresión en alta definición con materiales resistentes.</li>
+            <li><strong>Diseño Exclusivo:</strong> Cada cuadro refleja tu estilo y personalidad.</li>
+            <li><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.</li>
+            <li><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</li>
+        </ul>
+        <a href="#personaliza" class="btn">Personaliza tu cuadro ahora</a>
+    </section>
 
-  <!-- ¿Cómo funciona Stampa? -->
-  <section class="steps-container">
-    <div class="step">
-      <p><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/primerpaso.png" alt="Paso 1"> Elige tu imagen o sube tu foto.</p>
-    </div>
-    <div class="step">
-      <p><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/segundopaso.png" alt="Paso 2"> Nosotros la retocamos y optimizamos para impresión.</p>
-    </div>
-    <div class="step">
-      <p><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/tercerpaso.png" alt="Paso 3"> Imprimimos en materiales premium con calidad HD.</p>
-    </div>
-    <div class="step">
-      <p><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuartopaso.png" alt="Paso 4"> Recíbelo en casa y decora tu espacio.</p>
-    </div>
-  </section>
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Stampa es una empresa especializada en la impresión de cuadros en retablos personalizados. Ofrecemos un amplio catálogo de imágenes preseleccionadas que incluyen paisajes, caricaturas, superhéroes, bandas de rock, diseños 3D, y más. Además, permitimos que los clientes envíen sus propias fotos para ser retocadas y personalizadas en piezas únicas listas para imprimir.</p>
+        
+        <h3>Nuestra Visión</h3>
+        <p>Convertirnos en la empresa líder en impresión de cuadros personalizados en el mercado nacional e internacional.</p>
 
-  <!-- Convierte tus recuerdos en arte -->
-  <section class="art-section">
-    <p class="art-text"><strong>Personalización sin límites:</strong> Elige una imagen de nuestro catálogo o sube tu propia foto.<br><strong>Calidad Premium:</strong> Impresión en alta definición con materiales resistentes.<br><strong>Diseño Exclusivo:</strong> Cada cuadro refleja tu estilo y personalidad.<br><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.<br><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</p>
-    <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Cuadro personalizado">
-    <a href="#" class="btn">Personaliza tu cuadro ahora</a>
-  </section>
+        <h3>Misión</h3>
+        <p>Llevar el arte personalizado a los hogares y espacios de nuestros clientes, transformando sus recuerdos y gustos en piezas únicas de decoración.</p>
 
-  <!-- Testimonios -->
-  <section class="testimonials">
-    <blockquote>"Siempre quise tener un cuadro de mis gatos, y Stampa lo hizo realidad. ¡La calidad es increíble!"<footer>- Laura Martínez</footer></blockquote>
-    <blockquote>"Pedí un cuadro personalizado para mi mascota, y el resultado fue simplemente espectacular. ¡Gracias Stampa!"<footer>- Ana López</footer></blockquote>
-    <blockquote>"La calidad de impresión es increíble. ¡Lo recomendaré a todos!"<footer>- Juan Pérez</footer></blockquote>
-  </section>
+        <h3>Valores</h3>
+        <ul>
+            <li><strong>Creatividad:</strong> Fomentamos la innovación en el diseño y retoque de imágenes.</li>
+            <li><strong>Calidad:</strong> Usamos materiales premium para garantizar la durabilidad de nuestras impresiones.</li>
+            <li><strong>Personalización:</strong> Cada pieza es única y diseñada con el gusto del cliente en mente.</li>
+            <li><strong>Compromiso:</strong> Nos esforzamos por ofrecer el mejor servicio y atención al cliente.</li>
+        </ul>
+    </section>
 
-  <!-- Redes Sociales -->
-  <section class="social-media">
-    <p>Síguenos en nuestras redes sociales:</p>
-    <a href="https://www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
-    <a href="https://twitter.com"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_As_of_2021.svg" alt="Twitter"></a>
-    <a href="https://www.tiktok.com"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/TikTok_logo.svg" alt="TikTok"></a>
-  </section>
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="producto1.jpg" alt="Producto 1">
+                <p>Cuadro Personalizado 1</p>
+            </div>
+            <div class="producto">
+                <img src="producto2.jpg" alt="Producto 2">
+                <p>Cuadro Personalizado 2</p>
+            </div>
+            <div class="producto">
+                <img src="producto3.jpg" alt="Producto 3">
+                <p>Cuadro Personalizado 3</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contacto -->
-  <section class="contact">
-    <p>Contacto: Bogotá - Colombia</p>
-    <p>Email: stampacuadrospersonalizados@gmail.com</p>
-    <p>Teléfono: 3152873632</p>
-  </section>
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonio">
+            <p>“Siempre quise tener un cuadro de mis gatos, y Stampa lo hizo realidad. ¡La calidad es increíble!” - <strong>Laura Martínez</strong></p>
+        </div>
+        <div class="testimonio">
+            <p>“Pedí un cuadro personalizado para mi mascota, y el resultado fue simplemente espectacular. ¡Gracias Stampa!” - <strong>Ana López</strong></p>
+        </div>
+        <div class="testimonio">
+            <p>“La calidad de impresión es increíble. ¡Lo recomendaré a todos!” - <strong>Juan Pérez</strong></p>
+        </div>
+    </section>
 
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Dirección:</strong> Bogotá - Colombia</p>
+        <p><strong>Email:</strong> <a href="mailto:stampacuadrospersonalizados@gmail.com">stampacuadrospersonalizados@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> 3152873632</p>
+    </section>
+
+    <footer>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://instagram.com" target="_blank">Instagram</a> | 
+        <a href="https://youtube.com" target="_blank">YouTube</a> | 
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </footer>
 
   <!-- Bot -->
   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
