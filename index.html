@@ -41,60 +41,25 @@
             max-width: 1200px;
         }
 
-        /* Header */
-        header {
-            background-color: #d8bfae;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 48px;
-            color: white;
-            margin: 0;
-        }
-        header p {
-            font-size: 20px;
-            color: white;
-            margin-top: 10px;
-        }
-
-        /* Categorías */
-        .category-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-        }
-        .category-icons div {
-            background-color: white;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .category-icons div:hover {
-            transform: scale(1.1);
-        }
-        .category-icons div img {
-            width: 80px;
-            height: 80px;
-        }
-        .category-icons div p {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
         /* ¿Cómo funciona Stampa? */
         .how-it-works {
-            text-align: center;
-            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            font-size: 18px;
             margin-top: 40px;
             color: #333;
+        }
+        .how-it-works img {
+            width: 50%;
+            height: auto;
+            margin-right: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .how-it-works img:hover {
+            transform: scale(1.05);
         }
         .how-it-works ul {
             list-style-type: none;
@@ -241,6 +206,14 @@
                 width: 80%;
                 margin-bottom: 20px;
             }
+            .how-it-works {
+                flex-direction: column;
+                align-items: center;
+            }
+            .how-it-works img {
+                width: 80%;
+                margin-right: 0;
+            }
         }
     </style>
 </head>
@@ -259,26 +232,13 @@
     <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cabezotepaginaprincipal.png" alt="Encabezado">
 </div>
 
-<header>
-    <h1>STAMPA</h1>
-    <p>"Tu estilo, tu historia, tu Stampa."</p>
-</header>
-
+   
+<!-- ¿Cómo funciona Stampa? -->
 <div class="category-icons">
-    <div><img src="https://via.placeholder.com/80" alt="Mascotas"><p>Mascotas</p></div>
-    <div><img src="https://via.placeholder.com/80" alt="Paisajes"><p>Paisajes</p></div>
-    <div><img src="https://via.placeholder.com/80" alt="Abstracto"><p>Abstracto</p></div>
-    <div><img src="https://via.placeholder.com/80" alt="Personalizada"><p>Personalizada</p></div>
-</div>
-
-<div class="how-it-works">
-    <h2>¿Cómo funciona Stampa?</h2>
-    <ul>
-        <li>1. Elige la imagen o sube tu foto.</li>
-        <li>2. Nosotros la retocamos y optimizamos para impresión.</li>
-        <li>3. Imprimimos en materiales premium con calidad HD.</li>
-        <li>4. Recíbelo en casa y decora tu espacio.</li>
-    </ul>
+    <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/mascota.jpg/80" alt="Mascotas"><p>Mascotas</p></div>
+    <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/paisajes.jpg/80" alt="Paisajes"><p>Paisajes</p></div>
+    <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/abstracto.jpg/80" alt="Abstracto"><p>Abstracto</p></div>
+    <div><img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/personalizado.jpg/80" alt="Personalizada"><p>Personalizada</p></div>
 </div>
 
 <div class="features">
@@ -307,15 +267,15 @@
 
 <div class="products">
     <div>
-        <img src="https://via.placeholder.com/400x300" alt="Producto 1">
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadroguerrerosalaa.png/400x300" alt="Producto 1">
         <p>Producto 1</p>
     </div>
     <div>
-        <img src="https://via.placeholder.com/400x300" alt="Producto 2">
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadromar.jpg/400x300" alt="Producto 2">
         <p>Producto 2</p>
     </div>
     <div>
-        <img src="https://via.placeholder.com/400x300" alt="Producto 3">
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadroiguanamoto.jpg/400x300" alt="Producto 3">
         <p>Producto 3</p>
     </div>
 </div>
@@ -323,17 +283,17 @@
 <div class="testimonials">
     <h2>Lo que dicen nuestros clientes:</h2>
     <div class="testimonial">
-        <img src="https://via.placeholder.com/80" alt="Laura Martínez">
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/LauraMart%C3%ADnez.png/80" alt="Laura Martínez">
         <p>"Siempre quise tener un cuadro de mis gatos, y Stampa lo hizo realidad. ¡La calidad es increíble!"</p>
         <p>- Laura Martínez</p>
     </div>
     <div class="testimonial">
-        <img src="https://via.placeholder.com/80" alt="Ana López">
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/ana.png/80" alt="Ana López">
         <p>"Pedí un cuadro personalizado para mi mascota, y el resultado fue simplemente espectacular. ¡Gracias Stampa!"</p>
         <p>- Ana López</p>
     </div>
     <div class="testimonial">
-        <img src="https://via.placeholder.com/80" alt="Juan Pérez">
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/Juan.png/80" alt="Juan Pérez">
         <p>"La calidad de impresión es increíble. ¡Lo recomendaré a todos!"</p>
         <p>- Juan Pérez</p>
     </div>
