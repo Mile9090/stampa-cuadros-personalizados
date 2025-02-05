@@ -228,20 +228,42 @@
       background-color: #128C7E;
     }
 
+    /* Sección de los cuadros de misión, visión y valores */
+    .info-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #DBDBDB;
+      border-radius: 15px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
     @media (max-width: 768px) {
+      .info-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
       nav ul {
         flex-direction: column;
-      }
-
-      .section-container {
-        flex-direction: column !important;
-        align-items: center;
-        text-align: center;
-      }
-
-      nav ul li a {
-        padding: 10px 0;
-        font-size: 1.5em;
       }
 
       .hero-content {
@@ -287,15 +309,22 @@
     </div>
   </section>
 
-  <!-- Sección Productos -->
-  <section id="productos" class="section-container">
-    <div class="section-text">
-      <p><strong>Personalización sin límites</strong><br>Elige una imagen de nuestro catálogo o sube tu propia foto.</p>
-      <p><strong>Calidad Premium</strong><br>Impresión en alta definición con materiales resistentes.</p>
-      <p><strong>Diseño Exclusivo</strong><br>Cada cuadro refleja tu estilo y personalidad.</p>
+  <!-- Sección Misión, Visión y Valores -->
+  <section class="info-cards">
+    <div class="card">
+      <h3>Misión</h3>
+      <p>Llevar el arte personalizado a los hogares y espacios de nuestros clientes, transformando sus recuerdos y gustos en piezas únicas de decoración.</p>
     </div>
-    <div class="section-image">
-      <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Cuadro personalizado">
+    <div class="card">
+      <h3>Visión</h3>
+      <p>Convertirnos en la empresa líder en impresión de cuadros personalizados en el mercado nacional e internacional.</p>
+    </div>
+    <div class="card">
+      <h3>Valores</h3>
+      <p><strong>Creatividad:</strong> Fomentamos la innovación en el diseño y retoque de imágenes.</p>
+      <p><strong>Calidad:</strong> Usamos materiales premium para garantizar la durabilidad de nuestras impresiones.</p>
+      <p><strong>Personalización:</strong> Cada pieza es única y diseñada con el gusto del cliente en mente.</p>
+      <p><strong>Compromiso:</strong> Nos esforzamos por ofrecer el mejor servicio y atención al cliente.</p>
     </div>
   </section>
 
@@ -345,5 +374,6 @@
 
 </body>
 </html>
+
 
 
