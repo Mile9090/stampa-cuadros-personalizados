@@ -44,18 +44,16 @@
         /* Categorías */
         .category-icons {
             display: flex;
-            justify-content: center;
-            gap: 40px;
+            justify-content: space-around;
             margin: 40px 0;
             background-color: white;
             padding: 20px 0;
-            flex-wrap: wrap; /* Permite que los elementos se acomoden en múltiples filas */
         }
         .category-icons div {
             background-color: white;
             border-radius: 50%;
-            width: 220px;
-            height: 220px;
+            width: 180px;
+            height: 180px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -74,7 +72,7 @@
         }
         .category-icons div p {
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: normal;
             text-align: center;
         }
@@ -243,6 +241,7 @@
         @media (max-width: 768px) {
             .category-icons {
                 flex-direction: column;
+                gap: 20px;
             }
             .products {
                 flex-direction: column;
@@ -311,6 +310,7 @@
         <li>4. Recíbelo en casa y decora tu espacio.</li>
     </ul>
 </div>
+
 
 <div class="features">
     <h2>Conviértete tus recuerdos en arte con cuadros personalizados de alta calidad</h2>
