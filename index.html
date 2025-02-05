@@ -45,16 +45,17 @@
         .category-icons {
             display: flex;
             justify-content: center;
-            gap: 40px; /* Ajusta la separación entre los círculos */
+            gap: 40px;
             margin: 40px 0;
-            background-color: white; /* Fondo blanco */
+            background-color: white;
             padding: 20px 0;
+            flex-wrap: wrap; /* Permite que los elementos se acomoden en múltiples filas */
         }
         .category-icons div {
             background-color: white;
             border-radius: 50%;
-            width: 220px; /* Aumenta el tamaño de los círculos */
-            height: 220px; /* Aumenta el tamaño de los círculos */
+            width: 220px;
+            height: 220px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -69,12 +70,12 @@
         .category-icons div img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Asegura que la imagen llene el círculo */
+            object-fit: cover;
         }
         .category-icons div p {
             margin-top: 10px;
-            font-size: 18px; /* Ajusta el tamaño del texto */
-            font-weight: normal; /* Elimina la negrita */
+            font-size: 18px;
+            font-weight: normal;
             text-align: center;
         }
 
@@ -86,6 +87,7 @@
             margin-top: 40px;
             padding: 20px;
             color: #333;
+            flex-wrap: wrap; /* Permite la reubicación en pantallas más pequeñas */
         }
         .how-it-works img {
             width: 50%; /* Imagen reducida al 50% */
@@ -131,6 +133,7 @@
             display: flex;
             justify-content: center;
             gap: 30px;
+            flex-wrap: wrap; /* Permite que los elementos se acomoden en múltiples filas */
         }
         .features li {
             font-size: 18px;
@@ -160,6 +163,7 @@
             justify-content: center;
             gap: 30px;
             margin: 40px 0;
+            flex-wrap: wrap; /* Permite la reubicación en pantallas más pequeñas */
         }
         .products div {
             width: 30%;
@@ -167,6 +171,7 @@
             background-color: white;
             padding: 20px;
             text-align: center;
+            margin-bottom: 20px;
         }
         .products div img {
             width: 100%;
@@ -257,6 +262,13 @@
             .how-it-works img {
                 width: 80%;
                 margin-right: 0;
+            }
+            .features ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .features li {
+                width: 100%; /* Permite que las características se apilen en pantallas pequeñas */
             }
         }
     </style>
