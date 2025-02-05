@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stampa - Cuadros Personalizados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <style>
         /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f2e7;
+        }
+
+        /* Menú */
+        nav {
+            background-color: #4a4a4a;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Imagen debajo del menú */
+        .header-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .header-image img {
+            width: 100%;
+            max-width: 1200px;
         }
 
         /* Header */
@@ -217,6 +245,19 @@
     </style>
 </head>
 <body>
+
+<!-- Menú -->
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Nuestros productos</a>
+    <a href="#sobre-nosotros">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- Imagen debajo del menú -->
+<div class="header-image">
+    <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cabezotepaginaprincipal.png" alt="Encabezado">
+</div>
 
 <header>
     <h1>STAMPA</h1>
