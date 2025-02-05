@@ -5,105 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stampa - Cuadros Personalizados</title>
     <style>
+        /* General body styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f2e7;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f5f0;
+            color: #333;
         }
+
+        /* Header styles */
         header {
             background-color: #d8bfae;
-            padding: 20px;
             text-align: center;
-            color: #fff;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 36px;
+            font-size: 48px;
+            color: #fff;
+            margin: 0;
         }
         header p {
             font-size: 20px;
+            color: #fff;
             margin-top: 10px;
         }
+
+        /* Category icons styling */
         .category-icons {
             display: flex;
             justify-content: center;
-            margin: 30px 0;
+            gap: 30px;
+            margin: 40px 0;
         }
         .category-icons div {
             background-color: #fff;
             border-radius: 50%;
-            margin: 0 15px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
             width: 150px;
             height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .category-icons div:hover {
+            transform: scale(1.1);
         }
         .category-icons div img {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
         }
-        .section {
+        .category-icons div p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Section titles */
+        .section-title {
             text-align: center;
-            margin: 40px 0;
-            padding: 20px;
-        }
-        .section h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .steps {
-            display: flex;
-            justify-content: space-around;
+            font-size: 36px;
+            font-weight: bold;
             margin-top: 40px;
+            color: #333;
+        }
+
+        /* Steps section */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 40px;
         }
         .steps div {
             background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 200px;
+            padding: 30px;
+            text-align: center;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .steps div:hover {
+            transform: translateY(-10px);
         }
         .steps div h3 {
             font-size: 24px;
-            margin-bottom: 10px;
+            font-weight: bold;
+            color: #d8bfae;
         }
+        .steps div p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Testimonials section */
         .testimonials {
             background-color: #f0f0f0;
             padding: 40px 20px;
         }
         .testimonials h2 {
             font-size: 30px;
-            margin-bottom: 30px;
+            text-align: center;
+            margin-bottom: 40px;
         }
         .testimonial {
             display: inline-block;
             width: 30%;
-            margin: 10px;
-            text-align: center;
-            background-color: #fff;
             padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
         .testimonial img {
-            border-radius: 50%;
             width: 80px;
             height: 80px;
+            border-radius: 50%;
             margin-bottom: 20px;
         }
+        .testimonial p {
+            font-size: 16px;
+            color: #333;
+        }
+        .testimonial:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer styles */
         footer {
             text-align: center;
             background-color: #d8bfae;
-            padding: 20px;
+            padding: 30px 20px;
             color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         footer p {
             font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .category-icons {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .steps {
+                grid-template-columns: 1fr 1fr;
+            }
+            .testimonial {
+                width: 80%;
+            }
         }
     </style>
 </head>
@@ -121,38 +177,39 @@
     <div><img src="https://via.placeholder.com/80" alt="Personalizada"><p>Personalizada</p></div>
 </div>
 
-<div class="section">
+<div class="section-title">
     <h2>¿Cómo funciona Stampa?</h2>
-    <p>Convierte tus recuerdos en arte con cuadros personalizados de alta calidad.</p>
-    <div class="steps">
-        <div>
-            <h3>1. Elige tu imagen</h3>
-            <p>Sube tu foto para personalizar el cuadro.</p>
-        </div>
-        <div>
-            <h3>2. Retocamos y optimizamos</h3>
-            <p>Nosotros la mejoramos para una impresión perfecta.</p>
-        </div>
-        <div>
-            <h3>3. Impresión premium</h3>
-            <p>Impresión en materiales de alta definición.</p>
-        </div>
-        <div>
-            <h3>4. Recíbelo en casa</h3>
-            <p>Tu cuadro llega listo para decorar tu espacio.</p>
-        </div>
+</div>
+<div class="steps">
+    <div>
+        <h3>1. Elige tu imagen</h3>
+        <p>Sube tu foto para personalizar el cuadro.</p>
+    </div>
+    <div>
+        <h3>2. Retocamos y optimizamos</h3>
+        <p>Nosotros la mejoramos para una impresión perfecta.</p>
+    </div>
+    <div>
+        <h3>3. Impresión premium</h3>
+        <p>Impresión en materiales de alta definición.</p>
+    </div>
+    <div>
+        <h3>4. Recíbelo en casa</h3>
+        <p>Tu cuadro llega listo para decorar tu espacio.</p>
     </div>
 </div>
 
-<div class="section">
+<div class="section-title">
     <h2>Sobre Nosotros</h2>
+</div>
+<div class="section">
     <p>Stampa es una empresa especializada en la impresión de cuadros en retablos personalizados. Ofrecemos un amplio catálogo de imágenes preexistentes y personalizamos tus recuerdos.</p>
 </div>
 
 <div class="testimonials">
     <h2>Lo que dicen nuestros clientes:</h2>
     <div class="testimonial">
-        <img src="https://via.placeholder.com/80" alt="Laura Martinez">
+        <img src="https://via.placeholder.com/80" alt="Laura Martínez">
         <p>"Siempre quise tener un cuadro de mis gatos, y Stampa lo hizo realidad. ¡La calidad es increíble!"</p>
         <p>- Laura Martínez</p>
     </div>
