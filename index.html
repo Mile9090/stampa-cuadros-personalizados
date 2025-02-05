@@ -4,12 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STAMPA - Cuadros Personalizados</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: url('https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .categorias {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+
+        .categoria {
+            text-align: center;
+        }
+
+        .categoria img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .productos, .testimonios {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .producto, .testimonio {
+            text-align: center;
+            width: 30%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="STAMPA">
+            <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="STAMPA" width="100">
         </div>
         <nav>
             <ul>
@@ -25,19 +118,19 @@
         <h1>"Tu estilo, tu historia, tu Stampa."</h1>
         <div class="categorias">
             <div class="categoria">
-                <img src="mascotas.jpg" alt="Mascotas">
+                <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Mascotas">
                 <p>Mascotas</p>
             </div>
             <div class="categoria">
-                <img src="paisajes.jpg" alt="Paisajes">
+                <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Paisajes">
                 <p>Paisajes</p>
             </div>
             <div class="categoria">
-                <img src="abstracto.jpg" alt="Abstracto">
+                <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Abstracto">
                 <p>Abstracto</p>
             </div>
             <div class="categoria">
-                <img src="personalizada.jpg" alt="Personalizada">
+                <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Personalizada">
                 <p>Personalizada</p>
             </div>
         </div>
@@ -88,15 +181,15 @@
         <h2>Nuestros Productos</h2>
         <div class="productos">
             <div class="producto">
-                <img src="producto1.jpg" alt="Producto 1">
+                <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Producto 1">
                 <p>Cuadro Personalizado 1</p>
             </div>
             <div class="producto">
-                <img src="producto2.jpg" alt="Producto 2">
+                <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Producto 2">
                 <p>Cuadro Personalizado 2</p>
             </div>
             <div class="producto">
-                <img src="producto3.jpg" alt="Producto 3">
+                <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadrobrujagato.jpg" alt="Producto 3">
                 <p>Cuadro Personalizado 3</p>
             </div>
         </div>
@@ -129,7 +222,6 @@
         <a href="https://twitter.com" target="_blank">Twitter</a>
     </footer>
 
-  <!-- Bot -->
   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2025/02/01/00/20250201000217-5NLTVM7D.js"></script>
 
