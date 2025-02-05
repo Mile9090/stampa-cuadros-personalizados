@@ -54,18 +54,19 @@
             transform: translateX(-50%);
         }
         .category-icons div {
-            background-color: white;
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            overflow: hidden;
-            border: 10px solid white; /* Borde blanco agregado */
-        }
+    background-color: white;
+    border-radius: 50%;
+    width: 180px; /* 20% más grande */
+    height: 180px; /* 20% más grande */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+    margin-top: 20px; /* Baja los círculos 2 cm */
+    position: relative; /* Necesario para usar position absolute en el texto */
+}
         .category-icons div:hover {
             transform: scale(1.1);
         }
@@ -77,11 +78,21 @@
         .category-icons div p {
             margin-top: 10px;
              font-size: 20px; /* Ajusta el tamaño si es necesario */
-             font-weight: normal;
+             font-weight: bold;
              text-align: center;
              color: black; /* O el color que prefieras */
         }
 
+        /* Estilo para la letra Ñ fuera del círculo */
+   .category-icons div .letter-n {
+    position: absolute;
+    bottom: -20px; /* Ajusta la distancia desde el círculo */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px; /* Tamaño de la letra Ñ */
+    font-weight: bold;
+}
+        
         /* ¿Cómo funciona Stampa? */
         .how-it-works {
             display: flex;
