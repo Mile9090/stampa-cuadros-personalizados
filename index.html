@@ -122,17 +122,19 @@
 }
 
 .how-it-works h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+font-size: 30px;
+font-weight: bold;
+ margin-bottom: 20px;
+ color: #ba9988; /* Título en color #ba9988 */
+ text-align: center; /* Título centrado */
 
+}
 
         /* Características */
         .features {
             text-align: center;
             margin: 40px 0;
-            background-color: #fff;
+            background-color: f4f2e7;
             padding: 40px;
         }
         .features h2 {
@@ -143,14 +145,23 @@
             list-style-type: none;
             padding: 0;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 30px;
             flex-wrap: wrap;
         }
         .features li {
             font-size: 18px;
-            text-align: center;
-            width: 200px;
+            text-align: left;
+            width: 45%;
+        }
+
+        .features li strong {
+            font-weight: bold;
+        }
+
+        .features img {
+            width: 20%; /* Ajusta el tamaño de la imagen */
+            margin-left: 20px;
         }
 
         /* Misión, Visión y Valores */
@@ -291,9 +302,11 @@
                 flex-direction: column;
                 gap: 10px;
             }
-            .features li {
-                width: 100%;
+            .features img {
+                width: 80%; /* Ajusta la imagen a un tamaño más pequeño en pantallas pequeñas */
+                margin-left: 0; /* Elimina el margen de la imagen en pantallas pequeñas */
             }
+            
     .category-icons div {
         width: 55px; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
         height: 55px; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
@@ -346,16 +359,21 @@
     </div>
 </div>
 
+<!-- Características -->
 <div class="features">
     <h2>Conviértete tus recuerdos en arte con cuadros personalizados de alta calidad</h2>
-    <ul>
-        <li><strong>Personalización sin límites:</strong> Elige una imagen de nuestro catálogo o sube tu propia foto.</li>
-        <li><strong>Calidad Premium:</strong> Impresión en alta definición con materiales resistentes.</li>
-        <li><strong>Diseño Exclusivo:</strong> Cada cuadro refleja tu estilo y personalidad.</li>
-        <li><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.</li>
-        <li><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</li>
-    </ul>
+    <div class="feature-details">
+        <ul>
+            <li><strong>Personalización sin límites:</strong> Elige una imagen de nuestro catálogo o sube tu propia foto.</li>
+            <li><strong>Calidad Premium:</strong> Impresión en alta definición con materiales resistentes.</li>
+            <li><strong>Diseño Exclusivo:</strong> Cada cuadro refleja tu estilo y personalidad.</li>
+            <li><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.</li>
+            <li><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</li>
+        </ul>
+        <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/recuadrobrujasolo.jpg" alt="Cuadro personalizado">
+    </div>
 </div>
+
 
 <div class="mission-vision-values">
     <h2>Sobre Nosotros</h2>
