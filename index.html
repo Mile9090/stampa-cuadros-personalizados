@@ -42,91 +42,93 @@
             max-width: 1600px;
         }
 
-        /* Categorías con iconos */
-        .category-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: -50px; /* Ajustar para que se monten encima */
-            position: absolute;
-            top: 60%; /* Ajusta la posición de los círculos sobre la imagen */
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .category-icons div {
-            background-color: white;
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            overflow: hidden;
-            border: 7px solid white;
-            margin-top: 80px;
-        }
-        .category-icons div:hover {
-            transform: scale(1.1);
-        }
-        .category-icons div img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .category-icons div p {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: normal;
-            text-align: center;
-        }
+/* Categorías con iconos */
+.category-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -50px; /* Ajustar para que se monten encima */
+    position: absolute;
+    top: 60%; /* Ajusta la posición de los círculos sobre la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.category-icons div {
+    background-color: white;
+    border-radius: 50%;
+    width: 180px; /* 20% más grande */
+    height: 180px; /* 20% más grande */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+    border: 7px solid white; /* Borde blanco agregado */
+    margin-top: 80px; /* Esto baja los círculos 1 cm */
+}
+.category-icons div:hover {
+    transform: scale(1.1);
+}
+.category-icons div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.category-icons div p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
 
         /* ¿Cómo funciona Stampa? */
         .how-it-works {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 130px;
-            padding: 20px;
-            color: #333;
-            text-align: left;
-            flex-wrap: wrap;
-            background-color: white;
-        }
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 130px;
+    padding: 20px;
+    color: #333;
+    text-align: left; /* Asegura que el texto también se centre */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    background-color: white; /* Fondo blanco */
 
-        .how-it-works img {
-            width: 30%;
-            height: auto;
-            margin-right: 30px;
-            margin-left: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
+}
 
-        .how-it-works img:hover {
-            transform: scale(1.05);
-        }
+.how-it-works img {
+    width: 30%; /* Reduce la imagen al 50% de su tamaño */
+    height: auto;
+    margin-right: 30px;
+    margin-left: 30px; /* Añadí margen a la izquierda y derecha para que se mantenga el espaciado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
 
-        .how-it-works ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            font-size: 18px;
-            line-height: 1.8;
-        }
+.how-it-works img:hover {
+    transform: scale(1.05);
+}
 
-        .how-it-works li {
-            margin: 10px 0;
-        }
+.how-it-works ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
 
-        .how-it-works h2 {
-            font-size: 30px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #ba9988;
-            text-align: center;
-        }
+.how-it-works li {
+    margin: 10px 0;
+}
+
+.how-it-works h2 {
+font-size: 30px;
+font-weight: bold;
+ margin-bottom: 20px;
+ color: #ba9988; /* Título en color #ba9988 */
+ text-align: center; /* Título centrado */
+
+}
 
         /* Características */
         .features {
@@ -136,16 +138,9 @@
             padding: 40px;
         }
 
-        .features h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            color: #ba9988;
-            text-align: center;
-        }
-
         .feature-details {
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Centra el contenido en el contenedor */
             align-items: flex-start;
             gap: 30px;
             width: 100%;
@@ -157,7 +152,7 @@
             text-align: left;
             font-size: 18px;
             line-height: 1.8;
-            width: 100%;
+            width: 100%; /* Establece el texto en una sola columna */
         }
 
         .feature-text li {
@@ -169,17 +164,17 @@
         }
 
         .feature-details img {
-            width: 40%;
+            width: 40%; /* Ajusta el tamaño de la imagen */
             object-fit: cover;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        /* Botón Personalizar cuadro */
+                /* Botón Personalizar cuadro */
         .customize-btn-section {
-            background-color: white;
+            background-color: White; /* Fondo blanco para la sección del botón */
             padding: 20px;
         }
-
+        
         .customize-btn {
             display: inline-block;
             margin-top: 30px;
@@ -193,27 +188,54 @@
         }
 
         .customize-btn:hover {
-            background-color: #977346;
+            background-color: #977346; /* Cambia el color del botón al pasar el cursor */
         }
 
-        /* Sección Sobre Nosotros */
+        
+        .features h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #ba9988; /* Título con color #ba9988 */
+            text-align: center;
+        }
+
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .features li {
+            font-size: 18px;
+            text-align: left;
+            width: 45%;
+        }
+
+        .features li strong {
+            font-weight: bold;
+        }
+
+        .features img {
+            width: 20%; /* Ajusta el tamaño de la imagen */
+            margin-left: 20px;
+        }
+
+        /* Misión, Visión y Valores */
         .mission-vision-values {
             text-align: center;
             margin: 40px 0;
             background-color: #fff;
             padding: 40px;
         }
-
         .mission-vision-values h2 {
             font-size: 30px;
             margin-bottom: 20px;
-            font-weight: bold;
         }
-
         .mission-vision-values p {
             font-size: 18px;
             margin-bottom: 20px;
-            text-align: center;
         }
 
         /* Productos */
@@ -300,19 +322,20 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            /* Menú en pantallas pequeñas */
             nav {
-                padding: 10px 0;
+                padding: 10px 0; /* Reduce el padding del menú */
             }
             nav a {
-                font-size: 10px;
-                margin: 0 5px;
+                font-size: 10px; /* Reduce el tamaño de la fuente */
+                margin: 0 5px; /* Reduce el margen entre los elementos */
             }
 
+            /* Categorías */
             .category-icons {
-                flex-direction: row;
-                gap: 15px;
+                flex-direction: row; /* Mantiene los círculos en una línea horizontal */
+                gap: 15px; /* Reduce el espacio entre los círculos */
             }
-
             .products {
                 flex-direction: column;
                 align-items: center;
@@ -327,7 +350,7 @@
             .how-it-works {
                 flex-direction: column;
                 align-items: center;
-                margin-top: 30px;
+                margin-top: 30px; /* Menor margen superior para pantallas pequeñas */
             }
             .how-it-works img {
                 width: 80%;
@@ -343,15 +366,29 @@
             }
 
             .feature-text {
-                width: 100%;
+                width: 100%; /* Ajusta el texto para pantallas pequeñas */
                 margin-bottom: 20px;
             }
 
             .feature-details img {
-                width: 80%;
+                width: 80%; /* Ajusta la imagen para pantallas pequeñas */
                 margin-top: 20px;
+
             }
-        }
+            
+    .category-icons div {
+        width: 55px; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
+        height: 55px; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
+        margin-top: -200px; /* Asegura que los círculos permanezcan sobre la imagen */
+        border-width: 4px; /* Reduce el grosor del borde en pantallas pequeñas */
+
+    }
+    .category-texts p {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+}
+ 
+    
     </style>
 </head>
 <body>
@@ -407,17 +444,27 @@
         <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/recuadrobrujasolo.jpg" alt="Cuadro personalizado">
     </div>
 
-    <!-- Botón para personalizar el cuadro -->
+        <!-- Botón para personalizar el cuadro -->
     <a href="#contacto" class="customize-btn">Personaliza tu cuadro ahora</a>
 </div>
 
-<!-- Sección Sobre Nosotros -->
-<div class="mission-vision-values">
-    <h2>Sobre Nosotros</h2>
-    <p>Stampa es una empresa especializada en la impresión de cuadros en retablos personalizados. Ofrecemos un amplio catálogo de imágenes preseleccionadas que incluyen paisajes, caricaturas, superhéroes, bandas de rock, diseños 3D y más. Además, permitimos a los clientes enviar sus propias fotografías para ser retocadas y transformadas en piezas únicas listas para impresión.</p>
+
 </div>
 
-<!-- Productos -->
+
+<div class="mission-vision-values">
+    <h2>Sobre Nosotros</h2>
+    <p><strong>Nuestra Visión:</strong> Convertirnos en la empresa líder en impresión de cuadros personalizados en el mercado nacional e internacional.</p>
+    <p><strong>Misión:</strong> Llevar el arte personalizado a los hogares y espacios de nuestros clientes, transformando sus recuerdos y gustos en piezas únicas de decoración.</p>
+    <h3>Valores</h3>
+    <ul>
+        <li><strong>Creatividad:</strong> Fomentamos la innovación en el diseño y retoque de imágenes.</li>
+        <li><strong>Calidad:</strong> Usamos materiales premium para garantizar la durabilidad de nuestras impresiones.</li>
+        <li><strong>Personalización:</strong> Cada pieza es única y diseñada con el gusto del cliente en mente.</li>
+        <li><strong>Compromiso:</strong> Nos esforzamos por ofrecer el mejor servicio y atención al cliente.</li>
+    </ul>
+</div>
+
 <div class="products">
     <div>
         <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadroguerrerosalaa.png/400x300" alt="Producto 1">
@@ -433,7 +480,6 @@
     </div>
 </div>
 
-<!-- Testimonios -->
 <div class="testimonials">
     <h2>Lo que dicen nuestros clientes:</h2>
     <div class="testimonial">
@@ -469,13 +515,6 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 
