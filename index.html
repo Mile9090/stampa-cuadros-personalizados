@@ -134,13 +134,49 @@ font-weight: bold;
         .features {
             text-align: center;
             margin: 40px 0;
-            background-color: f4f2e7;
+            background-color: #f4f2e7;
             padding: 40px;
         }
+
+        .feature-details {
+            display: flex;
+            justify-content: center; /* Centra el contenido en el contenedor */
+            align-items: flex-start;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-text {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.8;
+            width: 50%;
+        }
+
+        .feature-text li {
+            margin: 10px 0;
+        }
+
+        .feature-text strong {
+            font-weight: bold;
+        }
+
+        .feature-details img {
+            width: 40%; /* Ajusta el tamaño de la imagen */
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
         .features h2 {
             font-size: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            color: #ba9988; /* Título con color #ba9988 */
+            text-align: right;
         }
+
         .features ul {
             list-style-type: none;
             padding: 0;
@@ -301,6 +337,20 @@ font-weight: bold;
             .features ul {
                 flex-direction: column;
                 gap: 10px;
+            }
+            .feature-details {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-text {
+                width: 100%; /* Ajusta el texto para pantallas pequeñas */
+                margin-bottom: 20px;
+            }
+
+            .feature-details img {
+                width: 80%; /* Ajusta la imagen para pantallas pequeñas */
+                margin-top: 20px;
             }
             .features img {
                 width: 80%; /* Ajusta la imagen a un tamaño más pequeño en pantallas pequeñas */
