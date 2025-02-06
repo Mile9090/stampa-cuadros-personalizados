@@ -83,25 +83,23 @@
 }
 
         /* ¿Cómo funciona Stampa? */
-        .how-it-works {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin-top: 40px;
-            padding: 20px;
-            color: #333;
-            position: relative; /* Asegura que el contenedor sea el punto de referencia para el posicionamiento absoluto */
+    flex-direction: column; /* Hace que los elementos (imagen y texto) se alineen verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 40px;
+    padding: 20px;
+    color: #333;
+    text-align: center; /* Asegura que el texto también se centre */
         }
         
         .how-it-works img {
     width: 30%; /* Reduce la imagen al 50% de su tamaño */
     height: auto;
-    margin-right: 30px;
-    margin-left: /* Centra la imagen horizontalmente */
-    margin-right: /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
         }
+        
         .how-it-works img:hover {
             transform: scale(1.05);
         }
@@ -111,8 +109,8 @@
             margin: 0;
             font-size: 18px;
             line-height: 1.8;
-            text-align: left;
         }
+        
         .how-it-works li {
             margin: 10px 0;
         }
