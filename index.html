@@ -82,7 +82,6 @@
             text-align: center;
         }
 
-        
         /* ¿Cómo funciona Stampa? */
         .how-it-works {
             display: flex;
@@ -199,14 +198,6 @@
 
         /* Sección Sobre Nosotros */
         .mission-vision-values {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 130px;
-            padding: 20px;
-            color: #333;
-            text-align: left;
-
             text-align: center;
             margin: 40px 0;
             background-color: #fff;
@@ -223,41 +214,6 @@
             font-size: 18px;
             margin-bottom: 20px;
             text-align: center;
-        }
-
-        .vision-mission-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .vision-mission-container .text-content {
-            text-align: left;
-            width: 50%;
-        }
-
-        .vision-mission-container img {
-            width: 50%; /* Ajustada a la mitad de su tamaño */
-            object-fit: cover;
-        }
-
-        .vision-mission-container .values-section {
-            display: flex;
-            justify-content: flex-end;
-            width: 50%;
-        }
-
-        .values-text {
-            text-align: left;
-            font-size: 18px;
-            line-height: 1.8;
-            width: 50%;
-        }
-
-        .values-text strong {
-            font-weight: bold;
         }
 
         /* Productos */
@@ -357,13 +313,6 @@
                 gap: 15px;
             }
 
-             .category-icons div {
-                 width: 60%; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
-                 height: 60%; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
-                 margin-top: -40px; /* Asegura que los círculos permanezcan sobre la imagen */
-                border-width: 4px; /* Reduce el grosor del borde en pantallas pequeñas */
-    }
-
             .products {
                 flex-direction: column;
                 align-items: center;
@@ -442,34 +391,30 @@
     </div>
 </div>
 
-<!-- Sección sobre nosotros -->
+<!-- Características -->
+<div class="features">
+    <h2>Conviértete tus recuerdos en arte con cuadros personalizados de alta calidad</h2>
+    <div class="feature-details">
+        <div class="feature-text">
+            <ul>
+                <li><strong>Personalización sin límites:</strong> Elige una imagen de nuestro catálogo o sube tu propia foto.</li>
+                <li><strong>Calidad Premium:</strong> Impresión en alta definición con materiales resistentes.</li>
+                <li><strong>Diseño Exclusivo:</strong> Cada cuadro refleja tu estilo y personalidad.</li>
+                <li><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.</li>
+                <li><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</li>
+            </ul>
+        </div>
+        <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/recuadrobrujasolo.jpg" alt="Cuadro personalizado">
+    </div>
+
+    <!-- Botón para personalizar el cuadro -->
+    <a href="#contacto" class="customize-btn">Personaliza tu cuadro ahora</a>
+</div>
+
+<!-- Sección Sobre Nosotros -->
 <div class="mission-vision-values">
     <h2>Sobre Nosotros</h2>
     <p>Stampa es una empresa especializada en la impresión de cuadros en retablos personalizados. Ofrecemos un amplio catálogo de imágenes preseleccionadas que incluyen paisajes, caricaturas, superhéroes, bandas de rock, diseños 3D y más. Además, permitimos a los clientes enviar sus propias fotografías para ser retocadas y transformadas en piezas únicas listas para impresión.</p>
-
-    <!-- Visión y Misión -->
-    <div class="vision-mission-container">
-        <div class="text-content">
-            <p><strong>Visión</strong><br>Convertirnos en la empresa líder en impresión de cuadros personalizados en el mercado nacional e internacional.</p>
-            <p><strong>Misión</strong><br>Llevar el arte personalizado a los hogares y espacios de nuestros clientes, transformando sus recuerdos y gustos en piezas únicas de decoración.</p>
-        </div>
-        <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/dragonmision.jpg" alt="Misión">
-    </div>
-
-    <!-- Valores -->
-    <div class="vision-mission-container">
-        <div class="values-section">
-            <div class="values-text">
-                <p><strong>Valores</strong><br>
-                <strong>Creatividad:</strong> Fomentamos la innovación en el diseño y retoque de imágenes.<br>
-                <strong>Calidad:</strong> Usamos materiales premium para garantizar la durabilidad de nuestras impresiones.<br>
-                <strong>Personalización:</strong> Cada pieza es única y diseñada con el gusto del cliente en mente.<br>
-                <strong>Compromiso:</strong> Nos esforzamos por ofrecer el mejor servicio y atención al cliente.
-                </p>
-            </div>
-            <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/paisajevision.jpg" alt="Valores">
-        </div>
-    </div>
 </div>
 
 <!-- Productos -->
@@ -524,6 +469,12 @@
 
 </body>
 </html>
+
+
+
+
+
+
 
 
 
