@@ -87,18 +87,21 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            text-align: center; /* Centra el contenido dentro de este contenedor
             margin-top: 40px;
             padding: 20px;
             color: #333;
+            position: relative; /* Asegura que el contenedor sea el punto de referencia para el posicionamiento absoluto */
         }
+        
         .how-it-works img {
-            width: 30%;
-            height: auto;
-            margin-left: auto;  /* Centra la imagen horizontalmente */
-            margin-right: 80px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
+    position: absolute; /* Posiciona la imagen de forma absoluta dentro del contenedor */
+    width: 30%; /* Reduce la imagen al 50% de su tamaño */
+    height: auto;
+    top: 0; /* Establece la distancia desde el borde superior del contenedor */
+    left: 50%; /* Establece la distancia desde el borde izquierdo del contenedor */
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
         }
         .how-it-works img:hover {
             transform: scale(1.05);
