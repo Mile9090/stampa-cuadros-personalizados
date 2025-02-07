@@ -278,24 +278,26 @@
         
         /* Productos */
         .products {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-        .products div {
-            width: 30%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: white;
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .products div img {
-            width: 100%;
-            height: auto;
-        }
+    display: flex;
+    justify-content: space-between; /* Espacio entre las columnas */
+    gap: 30px; /* Espacio entre cada producto */
+    margin: 40px 0;
+    flex-wrap: wrap; /* Permite que se ajusten los productos en varias filas si el espacio no es suficiente */
+}
+.products div {
+    width: 30%; /* Hace que cada producto ocupe un 30% del espacio horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products div img {
+    width: 100%;
+    height: auto;
+}
+
 
         /* Testimonios */
         .testimonials {
@@ -551,13 +553,13 @@
 <!-- Productos -->
 <div class="products">
     <div>
-        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadroguerrerosalaa.png/400x300" alt="Producto 1"></div>
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadroguerrerosalaa.png/400x300" alt="Producto 1">
     </div>
     <div>
-        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadromar.jpg/400x300" alt="Producto 2"></div>
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadromar.jpg/400x300" alt="Producto 2">
     </div>
     <div>
-        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadroiguanamoto.jpg/400x300" alt="Producto 3"></div>
+        <img src="https://raw.githubusercontent.com/StampAcuadros/Stampa/refs/heads/main/cuadroiguanamoto.jpg/400x300" alt="Producto 3">
     </div>
 </div>
 
