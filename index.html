@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f2e7;
+            color: #333;
         }
 
         /* Menú */
@@ -19,6 +20,7 @@
             background-color: #4a4a4a;
             padding: 15px 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: white;
@@ -26,6 +28,7 @@
             font-size: 18px;
             font-weight: bold;
             margin: 0 20px;
+            transition: color 0.3s ease;
         }
         nav a:hover {
             text-decoration: underline;
@@ -40,8 +43,12 @@
         .header-image img {
             width: 100%;
             max-width: 1600px;
+            transition: transform 0.3s ease;
         }
-
+        .header-image img:hover {
+            transform: scale(1.05);
+        }
+        
         /* Categorías con iconos */
         .category-icons {
             display: flex;
@@ -284,6 +291,7 @@
     margin: 40px 0;
     flex-wrap: wrap; /* Permite que se ajusten los productos en varias filas si el espacio no es suficiente */
 }
+        
 .products div {
     width: 30%; /* Hace que cada producto ocupe un 30% del espacio horizontal */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -291,13 +299,17 @@
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
+.products div:hover {
+    transform: scale(1.05);
+ }
+        
 .products div img {
     width: 100%;
     height: auto;
 }
-
 
         /* Testimonios */
         .testimonials {
@@ -305,10 +317,12 @@
             padding: 40px 20px;
             text-align: center;
         }
+        
         .testimonials h2 {
             font-size: 30px;
             margin-bottom: 30px;
         }
+        
         .testimonials .testimonial {
             display: inline-block;
             width: 30%;
@@ -318,12 +332,14 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+        
         .testimonials .testimonial img {
             border-radius: 50%;
             width: 80px;
             height: 80px;
             margin-bottom: 20px;
         }
+        
         .testimonials .testimonial p {
             font-size: 16px;
             color: #333;
@@ -336,12 +352,15 @@
             padding: 20px;
             color: white;
         }
+        
         footer p {
             font-size: 12px;
         }
+        
         footer .social-links {
             margin-top: 10px;
         }
+        
         footer .social-links a {
             color: white;
             margin: 0 10px;
@@ -349,6 +368,53 @@
             font-size: 20px;
         }
 
+                /* Sección Sobre Nosotros */
+        .mission-vision-values {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 0;
+            background-color: #fff;
+            padding: 40px;
+        }
+
+        .mission-vision-values h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .mission-vision-values p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .mission-vision-values .text-section {
+            margin-bottom: 20px;
+        }
+
+        .mission-vision-values .values {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .mission-vision-values .values div {
+            width: 48%;
+            text-align: left;
+        }
+
+        .mission-vision-values .values img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .mission-vision-values .values p strong {
+            font-weight: bold;
+        }
+        
         /* Contact Info */
         .contact-info {
             display: flex;
@@ -360,12 +426,12 @@
             width: 200px;
         }
 
-        /* Responsive Design */
+        /* Responsive Design */ /* Menú en pantallas pequeñas */
         @media (max-width: 768px) {
-            /* Menú en pantallas pequeñas */
-            nav {
+             nav {
                 padding: 10px 0; /* Reduce el padding del menú */
             }
+            
             nav a {
                 font-size: 10px; /* Reduce el tamaño de la fuente */
                 margin: 0 5px; /* Reduce el margen entre los elementos */
@@ -376,30 +442,37 @@
                 flex-direction: row; /* Mantiene los círculos en una línea horizontal */
                 gap: 15px; /* Reduce el espacio entre los círculos */
             }
+            
             .products {
                 flex-direction: column;
                 align-items: center;
             }
+            
             .products div {
                 width: 80%;
             }
+            
             .testimonials .testimonial {
                 width: 80%;
                 margin-bottom: 20px;
             }
+            
             .how-it-works {
                 flex-direction: column;
                 align-items: center;
                 margin-top: 30px; /* Menor margen superior para pantallas pequeñas */
             }
+            
             .how-it-works img {
                 width: 80%;
                 margin-right: 0;
             }
+            
             .features ul {
                 flex-direction: column;
                 gap: 10px;
             }
+            
             .feature-details {
                 flex-direction: column;
                 align-items: center;
@@ -412,7 +485,6 @@
 
             .feature-details img {
                 width: 80%; /* Ajusta la imagen para pantallas pequeñas */
-
             }
 
             .category-icons div {
@@ -420,8 +492,8 @@
                 height: 55px; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
                 margin-top: -200px; /* Asegura que los círculos permanezcan sobre la imagen */
                 border-width: 4px; /* Reduce el grosor del borde en pantallas pequeñas */
-
             }
+            
             .category-texts p {
                 font-size: 14px; /* Ajusta el tamaño del texto */
             }
@@ -456,7 +528,6 @@
                 max-width: 80%;
             }
         }
-
     </style>
 </head>
 <body>
@@ -508,7 +579,6 @@
         <p><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.</p>
         <p><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</p>
     </div>
-        <!-- Imagen a la derecha -->
         <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/recuadrobrujasolo.jpg" alt="Cuadro personalizado">
     </div>
 
@@ -563,6 +633,7 @@
     </div>
 </div>
 
+<!-- Testimonios -->
 <div class="testimonials">
     <h2>Lo que dicen nuestros clientes:</h2>
     <div class="testimonial">
@@ -582,6 +653,7 @@
     </div>
 </div>
 
+<!-- Footer -->
 <footer>
     <p>Bogotá, Colombia</p>
     <p>stampacuadrospersonalizados@gmail.com</p>
