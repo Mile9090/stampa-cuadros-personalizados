@@ -238,27 +238,31 @@
         /* Sección Sobre Nosotros */
         .mission-vision-values {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             margin: 40px 0;
             background-color: #fff;
             padding: 40px;
+            flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
         }
 
         .mission-vision-values h2 {
             font-size: 30px;
             margin-bottom: 20px;
             font-weight: bold;
+            text-align: center;
         }
 
         .mission-vision-values p {
             font-size: 18px;
             margin-bottom: 20px;
             font-weight: normal;
+            text-align: center;
         }
 
         .mission-vision-values .text-section {
             margin-bottom: 20px;
+            text-align: center; /* Centra el texto */
         }
 
         .mission-vision-values .values {
@@ -266,6 +270,7 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 30px;
+            flex-wrap: wrap; /* Asegura que los elementos se acomoden en pantallas pequeñas */
         }
 
         .mission-vision-values .values div {
@@ -276,40 +281,66 @@
         .mission-vision-values .values img {
             width: 100%;
             max-width: 400px;
+            margin-top: 20px;
         }
 
         .mission-vision-values .values p strong {
             font-weight: bold;
         }
 
+        /* Ajustes responsivos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .mission-vision-values {
+                flex-direction: column;
+                align-items: center; /* Centra el contenido */
+                padding: 20px; /* Reduce el padding */
+            }
+
+            .mission-vision-values .mission-text, .mission-vision-values .mission-image {
+                width: 100%;
+                text-align: center; /* Centra el texto y la imagen */
+            }
+
+            .mission-vision-values .mission-image {
+                margin-top: 20px;
+            }
+
+            .mission-vision-values h2 {
+                font-size: 24px;
+            }
+
+            .mission-vision-values p {
+                font-size: 16px;
+            }
+        }
         
         /* Productos */
         .products {
-    display: flex;
-    justify-content: space-between; /* Espacio entre las columnas */
-    gap: 30px; /* Espacio entre cada producto */
-    margin: 40px 0;
-    flex-wrap: wrap; /* Permite que se ajusten los productos en varias filas si el espacio no es suficiente */
-}
+            display: flex;
+            justify-content: space-between; /* Espacio entre las columnas */
+            gap: 30px; /* Espacio entre cada producto */
+            margin: 40px 0;
+            flex-wrap: wrap; /* Permite que se ajusten los productos en varias filas si el espacio no es suficiente */
+        }
         
-.products div {
-    width: 30%; /* Hace que cada producto ocupe un 30% del espacio horizontal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
+        .products div {
+            width: 30%; /* Hace que cada producto ocupe un 30% del espacio horizontal */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
 
-.products div:hover {
-    transform: scale(1.05);
- }
+        .products div:hover {
+            transform: scale(1.05);
+        }
         
-.products div img {
-    width: 100%;
-    height: auto;
-}
+        .products div img {
+            width: 100%;
+            height: auto;
+        }
 
         /* Testimonios */
         .testimonials {
@@ -366,167 +397,6 @@
             margin: 0 10px;
             text-decoration: none;
             font-size: 20px;
-        }
-
-                /* Sección Sobre Nosotros */
-        .mission-vision-values {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 40px 0;
-            background-color: #fff;
-            padding: 40px;
-        }
-
-        .mission-vision-values h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        .mission-vision-values p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            font-weight: normal;
-        }
-
-        .mission-vision-values .text-section {
-            margin-bottom: 20px;
-        }
-
-        .mission-vision-values .values {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 30px;
-        }
-
-        .mission-vision-values .values div {
-            width: 48%;
-            text-align: left;
-        }
-
-        .mission-vision-values .values img {
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .mission-vision-values .values p strong {
-            font-weight: bold;
-        }
-        
-        /* Contact Info */
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        .contact-info div {
-            text-align: center;
-            width: 200px;
-        }
-
-        /* Responsive Design */ /* Menú en pantallas pequeñas */
-        @media (max-width: 768px) {
-             nav {
-                padding: 10px 0; /* Reduce el padding del menú */
-            }
-            
-            nav a {
-                font-size: 10px; /* Reduce el tamaño de la fuente */
-                margin: 0 5px; /* Reduce el margen entre los elementos */
-            }
-
-            /* Categorías */
-            .category-icons {
-                flex-direction: row; /* Mantiene los círculos en una línea horizontal */
-                gap: 15px; /* Reduce el espacio entre los círculos */
-            }
-            
-            .products {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .products div {
-                width: 80%;
-            }
-            
-            .testimonials .testimonial {
-                width: 80%;
-                margin-bottom: 20px;
-            }
-            
-            .how-it-works {
-                flex-direction: column;
-                align-items: center;
-                margin-top: 30px; /* Menor margen superior para pantallas pequeñas */
-            }
-            
-            .how-it-works img {
-                width: 80%;
-                margin-right: 0;
-            }
-            
-            .features ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .feature-details {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .feature-text {
-                width: 100%; /* Ajusta el texto para pantallas pequeñas */
-                margin-bottom: 20px;
-            }
-
-            .feature-details img {
-                width: 80%; /* Ajusta la imagen para pantallas pequeñas */
-            }
-
-            .category-icons div {
-                width: 55px; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
-                height: 55px; /* Reduce el tamaño de los círculos al 60% de su tamaño original */
-                margin-top: -200px; /* Asegura que los círculos permanezcan sobre la imagen */
-                border-width: 4px; /* Reduce el grosor del borde en pantallas pequeñas */
-            }
-            
-            .category-texts p {
-                font-size: 14px; /* Ajusta el tamaño del texto */
-            }
-
-            .mission-vision-values .vision-mission {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .mission-vision-values .vision-mission div {
-                width: 100%;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-
-            .mission-vision-values img {
-                max-width: 80%;
-            }
-
-            .mission-vision-values .values {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .mission-vision-values .values div {
-                width: 100%;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-
-            .mission-vision-values .values img {
-                max-width: 80%;
-            }
         }
     </style>
 </head>
@@ -588,7 +458,7 @@
 
 <!-- Sección Sobre Nosotros -->
 <div class="mission-vision-values">
-    <div>
+    <div class="mission-text">
         <h2>Sobre Nosotros</h2>
         <p>Stampa es una empresa especializada en la impresión de cuadros en retablos personalizados. Ofrecemos un amplio catálogo de imágenes preseleccionadas que incluyen paisajes, caricaturas, superhéroes, bandas de rock, diseños 3D y más. Además, permitimos a los clientes enviar sus propias fotografías para ser retocadas y transformadas en piezas únicas listas para impresión.</p>
 
@@ -598,8 +468,8 @@
         </div>
     </div>
 
-    <!-- Imagen a la izquierda -->
-    <div>
+    <!-- Imagen a la derecha -->
+    <div class="mission-image">
         <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/dragonmision.jpg" alt="Imagen relacionada con misión y visión">
     </div>
 </div>
@@ -671,12 +541,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
