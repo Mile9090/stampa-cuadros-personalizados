@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -147,6 +147,7 @@ font-weight: bold;
             display: flex;
             justify-content: center; /* Centra el contenido en el contenedor */
             align-items: flex-start;
+            gap: 30px;
             width: 100%;
             max-width: 1200px;
             margin-top: 0 auto;
@@ -156,7 +157,7 @@ font-weight: bold;
             text-align: left;
             font-size: 18px;
             line-height: 1.8;
-            width: 100%; /* Asegura que el texto ocupe toda la línea */
+            width: 100%; /* La columna de texto ocupa el 50% */
         }
 
         .feature-text li {
@@ -168,7 +169,9 @@ font-weight: bold;
         }
 
         .feature-details img {
-        display: none; /* Elimina la imagen de la vista */
+            width: 40%; /* Ajusta el tamaño de la imagen */
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
                 /* Botón Personalizar cuadro */
@@ -435,6 +438,15 @@ font-weight: bold;
 <!-- Características -->
 <div class="features">
     <h2>Conviértete tus recuerdos en arte con cuadros personalizados de alta calidad</h2>
+
+    <div class="additional-text">
+        <p><strong>Personalización sin límites:</strong> Elige una imagen de nuestro catálogo o sube tu propia foto.</p>
+        <p><strong>Calidad Premium:</strong> Impresión en alta definición con materiales resistentes.</p>
+        <p><strong>Diseño Exclusivo:</strong> Cada cuadro refleja tu estilo y personalidad.</p>
+        <p><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.</p>
+        <p><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</p>
+    </div>
+
     <div class="feature-details">
         <div class="feature-text">
             <ul>
@@ -520,6 +532,7 @@ font-weight: bold;
 
 </body>
 </html>
+
 
 
 
