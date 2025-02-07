@@ -1,4 +1,4 @@
-       <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -145,7 +145,7 @@ font-weight: bold;
 
         .feature-details {
             display: flex;
-            justify-content: center; /* Centra el contenido en el contenedor */
+            justify-content: space-between; /* Espaciado entre el texto y la imagen */
             align-items: flex-start;
             gap: 30px;
             width: 100%;
@@ -157,7 +157,7 @@ font-weight: bold;
             text-align: left;
             font-size: 18px;
             line-height: 1.8;
-            width: 100%; /* La columna de texto ocupa el 50% */
+            width: 60%; /* La columna de texto ocupa el 60% */
         }
 
         .feature-text li {
@@ -169,7 +169,7 @@ font-weight: bold;
         }
 
         .feature-details img {
-            width: 40%; /* Ajusta el tamaño de la imagen */
+            width: 35%; /* Ajusta el tamaño de la imagen */
             object-fit: cover;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
@@ -379,7 +379,6 @@ font-weight: bold;
 
             .feature-details img {
                 width: 80%; /* Ajusta la imagen para pantallas pequeñas */
-                margin-top: 20px;
 
             }
             
@@ -439,15 +438,16 @@ font-weight: bold;
 <div class="features">
     <h2>Conviértete tus recuerdos en arte con cuadros personalizados de alta calidad</h2>
 
-    <div class="additional-text">
+    <div class="feature-details">
+      <div class="feature-text">
         <p><strong>Personalización sin límites:</strong> Elige una imagen de nuestro catálogo o sube tu propia foto.</p>
         <p><strong>Calidad Premium:</strong> Impresión en alta definición con materiales resistentes.</p>
         <p><strong>Diseño Exclusivo:</strong> Cada cuadro refleja tu estilo y personalidad.</p>
         <p><strong>Sostenibilidad:</strong> Materiales ecológicos y tintas sin tóxicos.</p>
         <p><strong>Entrega Segura:</strong> Compra fácil y envío a todo el país con garantía de satisfacción.</p>
     </div>
-
-            <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/recuadrobrujasolo.jpg" alt="Cuadro personalizado">
+        <!-- Imagen a la derecha -->
+        <img src="https://raw.githubusercontent.com/Mile9090/stampa-cuadros-personalizados/refs/heads/main/recuadrobrujasolo.jpg" alt="Cuadro personalizado">
     </div>
 
         <!-- Botón para personalizar el cuadro -->
